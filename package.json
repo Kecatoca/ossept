@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "prestart": "chmod +x node_modules/.bin/ts-node",
+    "prestart": "chmod +x node_modules",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
