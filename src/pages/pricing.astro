@@ -14,20 +14,20 @@ import CTA from '../components/blocks/CTA/BasicDark.astro'
 // Content
 // - SEO
 const SEO = {
-	title: 'Foxi | Pricing made simple',
+	title: 'Nuestros acontecimientos',
 	description:
-		'Discover the perfect SaaS pricing plan for your business. From startups to enterprises, our scalable solutions offer unparalleled features and 24/7 support.'
+		'Noticias y acontecimientos de nuestra organización sindical '
 }
 // - Page Header
 const header = {
-	title: 'Choose the plan that works for <strong>your</strong> needs',
-	text: 'All plans come with a 30-day money-back guarantee.'
+	title: 'Una Celebración con <strong>Categoria!</strong>',
+	text: 'Un evento cargado de desafíos pero llevado a cabo con un rotundo éxito.'
 }
 // - Testimonial data
-import testimonialBackground from '../assets/testimonial-bg-02.webp'
+import testimonialBackground from '../assets/auditorio1.jpeg'
 const testimonialData = {
 	blockquote:
-		"Foxi isn't just an app—it's like having a mischievous yet brilliant sidekick for your business. It streamlines tasks and also cracks jokes to keep spirits high",
+		'Foxi isnt just an app—its like having a mischievous yet brilliant sidekick for your business. It streamlines tasks and also cracks jokes to keep spirits high',
 	figcaption: 'Max Widgetson',
 	cite: ' CEO, Widgetify Ltd'
 }
@@ -35,9 +35,6 @@ const testimonialData = {
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero title={header.title} text={header.text} />
-	<Price />
-	<SocialProof />
-	<Feature />
 	<Testimonial
 		bg={testimonialBackground}
 		bgPosition="left"
@@ -45,6 +42,10 @@ const testimonialData = {
 		figcaption={testimonialData.figcaption}
 		cite={testimonialData.cite}
 	/>
-	<FAQ classes="bg-slate-50 dark:bg-neutral-900/40" />
-	<CTA />
+	<!--<Price />
+	<SocialProof />
+	<Feature />
+	
+	<FAQ classes="bg-slate-50 dark:bg-neutral-900/40" /> 
+	<CTA />-->
 </Layout>
